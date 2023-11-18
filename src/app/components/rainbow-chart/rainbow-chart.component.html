@@ -1,0 +1,9 @@
+<div id="plotly-container" #plotlyContainer></div>
+<ng-container *ngIf="tooltipContent">
+    <div class="tooltip-container" style="position: absolute;" [style]="tooltipStyle">
+        <span>Reading Day</span>
+        <span>{{tooltipContent.readingDay}}</span>
+        <span>Expected Loadfactor</span>
+        <span>{{tooltipContent.loadfactor}}</span>
+    </div>
+</ng-container>

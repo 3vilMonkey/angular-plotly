@@ -1,0 +1,18 @@
+.tooltip-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #efefef;
+    color: #05164d;
+    width: 150px;
+    border-top: 4px solid #ffad00;
+}
+
+::ng-deep .hoverlayer .hovertext path {
+    fill: #05164d !important;
+
+    &+text {
+        fill: #FFF !important
+    }
+}
